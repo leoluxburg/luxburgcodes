@@ -1,1 +1,49 @@
 // Specific CSS for your home-page
+body{
+ background-color: black;
+}
+.top{
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.top h3,h4{
+  font-family: 'Bungee Hairline', cursive;
+}
+.top img{
+  height: 150px;
+}
+.top i{
+  font-size: 50px;
+  color: white;
+}
+
+.redes i{
+  font-size: 50px;
+  color: white;
+}
+.redes i:hover{
+  color:#494949;
+  font-size: 75px;
+}
+
+
+.portafolio{
+  background-color:white;
+  color: black
+}
+
+.portafolio h3,h4{
+  font-family: 'Bungee Hairline', cursive;
+}
+
+.portafolio img{
+  height:150px;
+  border: 2px solid black;
+  box-shadow: 5px 5px 2px grey;
+}
+
+.portafolio img:hover{
+  border: 4px solid #494949;
+  box-shadow: 10px 10px 5px grey;
+}
