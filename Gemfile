@@ -7,6 +7,9 @@ gem 'pg'
 gem 'puma'
 gem 'rails', '5.0.2'
 gem 'redis'
+group :development do
+  gem 'rails_real_favicon'
+end
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
