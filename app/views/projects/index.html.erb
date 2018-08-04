@@ -1,0 +1,38 @@
+ <div class="top text-center">
+  <%= image_tag("logo.png")%>
+  <h4>Leonardo Luxburg</h4>
+  <h6>Web Developer</h6>
+  <br>
+  <div class="text-center">
+    <i class="fa fa-bars" data-toggle="collapse" data-target="#demo"></i>
+  </div>
+  <div id="demo" class="collapse text-center route">
+     <%= link_to root_path do %> <h5><strong>Leonardo Luxburg</strong></h5><% end %>
+     <%= link_to projects_path do %> <h5><strong>Portfolio</strong></h5> <% end %>
+      <h5><strong>Contact me</strong></h5>
+  </div>
+</div>
+<div class="projects text-center">
+  <br>
+  <div class="container">
+  <h3><strong>Projects</strong></h3>
+  <hr>
+    <div class="row client">
+    <% @projects.each do |project| %>
+
+    <div class="col-md-4">
+    <%= link_to project_path(project) do %>
+    <%= image_tag("plchldr.png")%>
+    <h6><%= project.name %></h6>
+    <% end %>
+    </div>
+    <% end %>
+    </div>
+  <hr>
+  </div>
+  <br>
+  <br>
+</div>
+<br>
+<br>
+<br>

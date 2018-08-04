@@ -1,0 +1,44 @@
+ <div class="top text-center">
+  <%= image_tag("logo.png")%>
+  <h4>Leonardo Luxburg</h4>
+  <h6>Web Developer</h6>
+  <br>
+  <div class="text-center">
+    <i class="fa fa-bars" data-toggle="collapse" data-target="#demo"></i>
+  </div>
+  <div id="demo" class="collapse text-center route">
+     <%= link_to root_path do %> <h5><strong>Leonardo Luxburg</strong></h5><% end %>
+     <%= link_to projects_path do %> <h5><strong>Portfolio</strong></h5> <% end %>
+      <h5><strong>Contact me</strong></h5>
+  </div>
+</div>
+<div class="project text-center">
+  <br>
+  <div class="container">
+  <hr>
+    <div class="row">
+    <div class="col-sm-6 text-center client">
+      <a href=<%= "http://"+@project.url%>>
+        <%= image_tag("plchldr.png")%>
+        <p>*Click to visit*</p>
+      </a>
+    </div>
+    <div class="col-sm-6">
+      <h4><strong>Title</strong></h4>
+      <p><%= @project.name%></p>
+       <h4><strong>Description</strong></h4>
+      <p><%= @project.description%></p>
+      <h4><strong>url</strong></h4>
+      <p><%=@project.url%></p>
+       <h4><strong>Built on</strong></h4>
+      <p>Ruby on rails</p>
+    </div>
+    </div>
+  <hr>
+  </div>
+  <br>
+  <br>
+</div>
+<br>
+<br>
+<br>
