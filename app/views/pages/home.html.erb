@@ -1,4 +1,4 @@
- <div class="top text-center">
+<div class="top text-center">
   <%= image_tag("logo.png")%>
   <h4>Leonardo Luxburg</h4>
   <h6>Web Developer</h6>
@@ -9,7 +9,7 @@
   <div id="demo" class="collapse text-center route">
      <%= link_to root_path do %> <h5><strong>Leonardo Luxburg</strong></h5><% end %>
      <%= link_to projects_path do %> <h5><strong>Portfolio</strong></h5> <% end %>
-      <h5><strong>Contact me</strong></h5>
+    <%= link_to new_message_path do %> <h5><strong>Contact me</strong></h5><% end %>
   </div>
 </div>
 <div class="me text-center">

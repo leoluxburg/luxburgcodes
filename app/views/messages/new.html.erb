@@ -1,4 +1,4 @@
- <div class="top text-center">
+<div class="top text-center">
   <%= image_tag("logo.png")%>
   <h4>Leonardo Luxburg</h4>
   <h6>Web Developer</h6>
@@ -12,22 +12,28 @@
     <%= link_to new_message_path do %> <h5><strong>Contact me</strong></h5><% end %>
   </div>
 </div>
-<div class="projects text-center">
+<div class="message text-center">
   <br>
   <div class="container">
-  <h3><strong>Projects</strong></h3>
+  <h3><strong>Letter</strong></h3>
   <hr>
-    <div class="row client">
-    <% @projects.each do |project| %>
-
-    <div class="col-md-4">
-    <%= link_to project_path(project) do %>
-    <%= image_tag("plchldr.png")%>
-    <h6><%= project.name %></h6>
-    <% end %>
-    </div>
-    <% end %>
-    </div>
+  <div class="row">
+  <div class="col-xs-12 col-sm-6">
+  <%= image_tag("logo2.png")%>
+  <br>
+  <br>
+  <p>@leonardoluxburg</p>
+  <p>leonardoluxburg@gmail.com</p>
+  </div>
+    <div class="col-xs-12 col-sm-6">
+  <%= simple_form_for @message do |f| %>
+  <%= f.input :name %>
+  <%= f.input :email %>
+  <%= f.input :message %>
+  <%= f.button :submit,class: "btn btn-primary" %>
+  <% end %>
+</div>
+  </div>
   <hr>
   </div>
   <br>

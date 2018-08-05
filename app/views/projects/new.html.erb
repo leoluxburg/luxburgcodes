@@ -1,2 +1,40 @@
-<h1>Projects#new</h1>
-<p>Find me in app/views/projects/new.html.erb</p>
+
+ <div class="top text-center">
+  <%= image_tag("logo.png")%>
+  <h4>Leonardo Luxburg</h4>
+  <h6>Web Developer</h6>
+  <br>
+  <div class="text-center">
+    <i class="fa fa-bars" data-toggle="collapse" data-target="#demo"></i>
+  </div>
+  <div id="demo" class="collapse text-center route">
+     <%= link_to root_path do %> <h5><strong>Leonardo Luxburg</strong></h5><% end %>
+     <%= link_to projects_path do %> <h5><strong>Portfolio</strong></h5> <% end %>
+      <h5><strong>Contact me</strong></h5>
+  </div>
+</div>
+<div class="projects text-center">
+  <br>
+  <div class="container">
+  <h3><strong>New Project</strong></h3>
+  <hr>
+  <div class="row">
+    <div class="col-xs-12">
+  <%= simple_form_for @project do |f| %>
+  <%= f.input :name %>
+  <%= f.input :url %>
+  <%= f.input :description %>
+  <%= f.input :photo %>
+  <%= f.input :photo_cache, as: :hidden %>
+  <%= f.button :submit,class: "btn btn-primary" %>
+  <% end %>
+</div>
+  </div>
+  <hr>
+  </div>
+  <br>
+  <br>
+</div>
+<br>
+<br>
+<br>
