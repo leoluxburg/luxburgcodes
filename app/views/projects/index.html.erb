@@ -22,7 +22,7 @@
 
     <div class="col-md-4">
     <%= link_to project_path(project) do %>
-    <%= image_tag("plchldr.png")%>
+    <%= cl_image_tag project.photo %>
     <h6><%= project.name %></h6>
     <% end %>
     </div>
