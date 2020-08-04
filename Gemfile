@@ -3,7 +3,7 @@ ruby '2.3.3'
 
 gem 'figaro'
 gem 'jbuilder', '~> 2.0'
-gem 'pg'
+gem 'pg' , '~> 0.20.0'
 gem 'puma'
 gem 'rails', '5.0.2'
 gem 'redis'
