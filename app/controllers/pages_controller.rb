@@ -4,4 +4,7 @@ class PagesController < ApplicationController
 
   def cv
   end
+
+  def podcast
+  end
 end
