@@ -19,7 +19,7 @@ gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'cloudinary'
-gem 'carrierwave', '~> 1.2'
+gem 'carrierwave', '~> 1.3'
 gem 'dotenv-rails', groups: [:development, :test]
 
 
